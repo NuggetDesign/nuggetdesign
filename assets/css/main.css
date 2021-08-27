@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --button-backgroundcolors: #202020;
+  --button-colors: white;
+  --font-family: 'Poppins', serif;
+  --h1-size-m: 55px;
+  --h2-size-m: 36px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+/*# sourceMappingURL=main.css.map */
