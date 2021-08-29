@@ -84,7 +84,7 @@ nav {
 }
 
 .navbar {
-    padding: 1em;
+    padding: 1em 2em;
 
     .logo {
         display: flex;
@@ -102,7 +102,7 @@ nav {
 }
 
 .hero {
-    padding: 1em;
+    padding: 1em 2em;
     display: block;
     align-items: center;
     justify-content: center;
@@ -121,7 +121,7 @@ nav {
         font-size: var(--p-size-m);
         font-weight: var(--font-regular);
         text-align: center;
-        padding: 1.5em 1em;
+        padding: 1.5em;
     }
     
     .hero-button {
