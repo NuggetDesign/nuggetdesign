@@ -13,6 +13,7 @@
   --font-height-p: 25px;
   --font-height-service-p: 20px;
   --font-height-testimonals: 28px;
+  --font-height-title: 65px;
   --h1-size-m: 55px;
   --h2-size-m: 36px;
   --h3-size-m: 25px;
@@ -35,6 +36,62 @@
   padding: 0;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  width: 66%;
+  right: -100%;
+  top: 0;
+  height: 100vh;
+  padding: 1em;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 2em;
+  text-align: left;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 1em;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo .nugget-logo {
+  width: 50px;
+  margin-right: 1em;
+}
+
+.navbar .logo .nugget-short {
+  width: 100px;
+}
+
 .hero {
   position: relative;
 }
@@ -44,5 +101,17 @@
   z-index: -1;
   top: 0;
   left: 0;
+}
+
+.hero {
+  padding: 1em;
+}
+
+.hero h1 {
+  font-size: var(--h1-size-m);
+  font-weight: var(--font-semi-bold);
+  line-height: var(--font-height-title);
+  text-align: center;
+  padding: 1em;
 }
 /*# sourceMappingURL=main.css.map */

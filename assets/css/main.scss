@@ -19,6 +19,7 @@
     --font-height-p: 25px;
     --font-height-service-p: 20px;
     --font-height-testimonals: 28px;
+    --font-height-title: 65px;
 
     //mobile
     --h1-size-m: 55px;
@@ -45,6 +46,60 @@
     padding: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 66%;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+    transition: all 0.2s ease-in;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+        
+        a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 2em;
+            text-align: left;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.navbar {
+    padding: 1em;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        .nugget-logo {
+            width: 50px;
+            margin-right: 1em;
+        }
+
+        .nugget-short {
+            width: 100px;
+        }
+    }
+}
+
 .hero {
     position: relative;
 
@@ -53,5 +108,17 @@
         z-index: -1;
         top: 0;
         left: 0;
+    }
+}
+
+.hero {
+    padding: 1em;
+
+    h1 {
+        font-size: var(--h1-size-m);
+        font-weight: var(--font-semi-bold);
+        line-height: var(--font-height-title);
+        text-align: center;
+        padding: 1em;
     }
 }
