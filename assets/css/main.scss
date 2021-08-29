@@ -2,22 +2,56 @@
 
 :root {
 
+    //button
     --button-backgroundcolors: #202020;
     --button-colors: white;
-    
+    --button-border: 5px;
+
+    //font
     --font-family: 'Poppins', serif;
+
+    --font-bold: 700;
+    --font-semi-bold: 600;
+    --font-medium: 500;
+    --font-regular: 400;
+    --font-uppercase: uppercase;
+    --font-space: 261px;
+    --font-height-p: 25px;
+    --font-height-service-p: 20px;
+    --font-height-testimonals: 28px;
 
     //mobile
     --h1-size-m: 55px;
     --h2-size-m: 36px;
+    --h3-size-m: 25px;
+    --h4-size-m: 14px;
+    --p-size-m: 16px;
 
+    --service-title-m: 22px;
+    --service-paragraph-m: 14px;
 
+    --testimonials-middle-m:22px;
+    --testimonials-name-m: 16px;
+    --testimonials-occupation-m: 14px;
+
+    --button-bigsize-m: 16px;
+    --button-size-m: 12px;
 }
 
 * {
     box-sizing: border-box;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: var(--font-family);
+.hero {
+    position: relative;
+
+    #circle {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
 }
