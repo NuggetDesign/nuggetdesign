@@ -211,18 +211,23 @@ nav li a:hover {
   border-radius: var(--card-border);
   padding: 0 2em;
   height: 125px;
-  margin: 2em;
+  margin: 2em 1.5em;
 }
 
 .why-me ul img {
   margin: -1em 1.5em 1.5em 0;
+  width: 100px;
 }
 
-.why-me ul #fast-service-text {
-  margin-left: -.5em;
+.why-me ul #affordable-icon {
+  margin-left: .5em;
 }
 
-.why-me ul #deadline-icon {
+.why-me ul #fast-icon {
+  width: 120px;
+}
+
+.why-me ul #fast-service-text, .why-me ul #affordable-prices-text, .why-me ul #deadline-icon {
   margin-left: -.5em;
 }
 

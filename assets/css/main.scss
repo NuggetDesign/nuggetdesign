@@ -210,18 +210,23 @@ nav {
             border-radius: var(--card-border);
             padding: 0 2em;
             height: 125px;
-            margin: 2em;
+            margin: 2em 1.5em;
         }
 
         img {
             margin: -1em 1.5em 1.5em 0;
+            width: 100px;
         } 
 
-        #fast-service-text{
-            margin-left: -.5em;
+        #affordable-icon {
+            margin-left: .5em;
         }
         
-        #deadline-icon {
+        #fast-icon {
+            width: 120px;
+        }
+
+        #fast-service-text, #affordable-prices-text, #deadline-icon  {
             margin-left: -.5em;
         }
         
