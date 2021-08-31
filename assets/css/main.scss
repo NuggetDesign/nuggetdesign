@@ -6,58 +6,66 @@
     --h4-color: #B1B1B1;
     --p-color: #858585;
 
+    --img-border: 10px;
+
     --card-color: white;
     --card-background: 0px 0px 20px #E9E9E9;
     --card-border: 12px;
+    --card-border-service: 20px;
 
     //button
     --button-background: #202020;
-    --button-colors: white;
+    --button-color-w: white;
+    --button-color-b: #202020;
     --button-border: 5px;
+    --button-bigsize: 16px;
+    --button-size: 14px;
+    --button-space: 1px;
 
     //font
     --font-family: 'Poppins', serif;
 
-    //weight
+    //font weight
     --font-bold: 700;
     --font-semi-bold: 600;
     --font-medium: 500;
     --font-regular: 400;
     --font-uppercase: uppercase;
-    --font-space: 6px;
 
-    //height
+    --font-letter: 4px;
+
+    //font height
     --font-height-p: 25px;
     --font-height-service-p: 20px;
     --font-height-service-t: 24px;
     --font-height-testimonals: 28px;
     --font-height-title: 65px;
     --font-height-subtitle: 43px;
+    --font-height-subtitle-line: 30px;
+    --font-height-fp: 30px;
 
     //mobile
-    --h1-size-m: 55px;
-    --h2-size-m: 36px;
-    --h3-size-m: 25px;
-    --h4-size-m: 14px;
-    --p-size-m: 16px;
+    --h1-size: 55px;
+    --h2-size: 36px;
+    --h3-size: 25px;
+    --h4-size: 14px;
+    --p-size: 16px;
 
-    --h2-padding-m: 10px 0 .7em;
+    --h2-padding: 10px 0 .7em;
 
-    --service-title-m: 22px;
-    --service-paragraph-m: 14px;
+    --service-title: 22px;
+    --service-paragraph: 14px;
 
-    --testimonials-middle-m: 22px;
-    --testimonials-name-m: 16px;
-    --testimonials-occupation-m: 14px;
-
-    --button-bigsize-m: 16px;
-    --button-size-m: 12px;
+    --testimonials-middle: 22px;
+    --testimonials-name: 16px;
+    --testimonials-occupation: 14px;
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--font-family);
     text-decoration: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -128,7 +136,7 @@ nav {
     position: relative;
 
     .hero-title {
-        font-size: var(--h1-size-m);
+        font-size: var(--h1-size);
         font-weight: var(--font-semi-bold);
         line-height: var(--font-height-title);
         text-align: center;
@@ -136,7 +144,7 @@ nav {
     }
 
     .hero-desc {
-        font-size: var(--p-size-m);
+        font-size: var(--p-size);
         font-weight: var(--font-regular);
         text-align: center;
         padding: 1.5em;
@@ -155,7 +163,7 @@ nav {
             padding: 1.2em 1em;
             color: white;
             font-weight: var(--font-semi-bold);
-            font-size: var(--p-size-m);
+            font-size: var(--p-size);
         }
     }
 
@@ -174,23 +182,23 @@ nav {
 }
 
 .why-me {
-    margin-top: 8em;
-    padding: 4em 1.5em;
+    margin: 8em 0;
+    padding: 4em 1.5em 10em;
     background-color: var(--gray-background);
 
     h4 {
-        font-size: var(--h4-size-m);
+        font-size: var(--h4-size);
         font-weight: var(--font-bold);
-        letter-spacing: var(--font-space);
+        letter-spacing: var(--font-letter);
         text-transform: var(--font-uppercase);
         color: var(--h4-color);
     }
 
     h2 {
-        font-size: var(--h2-size-m);
+        font-size: var(--h2-size);
         font-weight: var(--font-semi-bold);
         line-height: var(--font-height-subtitle);
-        padding: var(--h2-padding-m);
+        padding: var(--h2-padding);
     }
 
     p {
@@ -230,9 +238,181 @@ nav {
         }
         
         h1 {
-            font-size: var(--service-title-m);
+            font-size: var(--service-title);
             font-weight: var(--font-semi-bold);
             line-height: var(--font-height-service-t);
+        }
+    }
+}
+
+.services {
+    padding: 1.5em;
+    margin-top: -14em;
+
+    ul {
+
+        li {
+            background-color: var(--card-color);
+            box-shadow: var(--card-background);
+            padding: 3em 3em 2em;
+            margin-top: 2em;
+            border-radius: var(--card-border-service);
+
+            img {
+                width: 40px;
+                margin: 1em 0;
+            }
+    
+            h1 {
+                font-size: var(--service-title);
+                font-weight: var(--font-semi-bold);
+                line-height: var(--font-height-service-t);
+                margin-bottom: 1em;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                margin-top: 2em;
+                color: var(--button-color-b);
+                font-size: var(--button-size);
+                font-weight: var(--font-semi-bold);
+                letter-spacing: var(--button-space);
+
+                img {
+                    width: 12px;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}
+
+.projects {
+    padding: 5em 1.5em;
+
+    .title-header {
+        margin-bottom: 8em;
+
+        h4 {
+            font-size: var(--h4-size);
+            font-weight: var(--font-bold);
+            letter-spacing: var(--font-letter);
+            text-transform: var(--font-uppercase);
+            color: var(--h4-color);
+        }
+
+        h2 {
+            font-size: var(--h2-size);
+            font-weight: var(--font-semi-bold);
+            line-height: var(--font-height-subtitle-line);
+            padding: var(--h2-padding);
+        }
+    
+        p {
+            color: var(--p-color);
+            padding-bottom: 4em;
+        }
+
+        a {
+            box-sizing: border-box;
+            border: 1px solid #B8B8B8;
+            border-radius: var(--button-border);
+            color: #B8B8B8;
+            font-size: var(--h4-size);
+            font-weight: var(--font-bold);
+            padding: 1.5em 4em;
+        }
+    }
+
+    .featured-project {
+        .project-img {
+            width: 100%;
+            border-radius: var(--img-border);
+        } 
+
+        .right-col {
+
+            h3 {
+                font-size: var(--h3-size);
+                font-weight: var(--font-semi-bold);
+                line-height: var(--font-height-fp);
+                margin-top: 1em;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: 160px auto;
+                grid-gap: .5em;
+                margin: 2em 0em 4em;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1em;
+                    border: 1px solid #B8B8B8;
+                    border-radius: 5px;
+
+                    p {
+                        font-size: var(--h4-size);
+                        font-weight: var(--font-semi-bold);
+                        text-transform: var(--font-uppercase);
+                        margin-left: 1em;
+                        
+                    }
+                }
+
+                .longer {
+                    padding: 1em 6em;
+                }
+            }
+
+            .view-more {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--button-background);
+                width: 230px;
+                color: white;
+                padding: 1.5em 2em;
+                border-radius: var(--button-border);
+                margin-bottom: 8em;
+
+                p {
+                    font-size: var(--h4-size);
+                    font-weight: var(--font-semi-bold);
+                    letter-spacing: var(--button-space);
+                    padding-right: 1em;
+                }
+            }
+        }
+    }
+}
+
+.testimonials {
+    padding: 1.5em;
+
+    .title-header {
+
+        h4 {
+            font-size: var(--h4-size);
+            font-weight: var(--font-bold);
+            letter-spacing: var(--font-letter);
+            text-transform: var(--font-uppercase);
+            color: var(--h4-color);
+        }
+    
+        h2 {
+            font-size: var(--h2-size);
+            font-weight: var(--font-semi-bold);
+            line-height: var(--font-height-subtitle-line);
+            padding: var(--h2-padding);
+        }
+    
+        p {
+            color: var(--p-color);
+            padding-bottom: 5em;
         }
     }
 }
