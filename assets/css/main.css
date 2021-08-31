@@ -209,9 +209,8 @@ nav li a:hover {
   -webkit-box-shadow: var(--card-background);
           box-shadow: var(--card-background);
   border-radius: var(--card-border);
-  padding: 0 2em;
   height: 125px;
-  margin: 2em 1.5em;
+  margin: 2em 2em;
 }
 
 .why-me ul img {
