@@ -6,6 +6,10 @@
     --h4-color: #B1B1B1;
     --p-color: #858585;
 
+    --card-color: white;
+    --card-background: 0px 0px 20px #E9E9E9;
+    --card-border: 12px;
+
     //button
     --button-background: #202020;
     --button-colors: white;
@@ -22,6 +26,7 @@
     --font-space: 6px;
     --font-height-p: 25px;
     --font-height-service-p: 20px;
+    --font-height-service-t: 22px;
     --font-height-testimonals: 28px;
     --font-height-title: 65px;
     --font-height-subtitle: 43px;
@@ -33,10 +38,12 @@
     --h4-size-m: 14px;
     --p-size-m: 16px;
 
+    --h2-padding-m: 10px 0 .7em;
+
     --service-title-m: 22px;
     --service-paragraph-m: 14px;
 
-    --testimonials-middle-m:22px;
+    --testimonials-middle-m: 22px;
     --testimonials-name-m: 16px;
     --testimonials-occupation-m: 14px;
 
@@ -153,7 +160,7 @@ nav {
         position: absolute;
         z-index: -1;
         top: 0;
-        left: 10em;
+        left: 40%;
         margin-top: -40em;
         width: 800px;
     }
@@ -165,7 +172,7 @@ nav {
 
 .why-me {
     margin-top: 8em;
-    padding: 8em 1.5em;
+    padding: 4em 1.5em;
     background-color: var(--gray-background);
 
     h4 {
@@ -180,11 +187,41 @@ nav {
         font-size: var(--h2-size-m);
         font-weight: var(--font-semi-bold);
         line-height: var(--font-height-subtitle);
-        padding: 10px 0em .7em 0em;
+        padding: var(--h2-padding-m);
     }
 
     p {
         color: var(--p-color);
         padding-bottom: 5em;
+    }
+
+    ul {
+        display: block;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--card-color);
+            box-shadow: var(--card-background);
+            border-radius: var(--card-border);
+            padding: 0 2em;
+            height: 125px;
+            margin: 2em;
+        }
+
+        img {
+            margin: -1em 1.5em 1.5em 0;
+        } 
+
+        #fast-service-text{
+            margin-left: -.5em;
+        }
+        
+        h1 {
+            font-size: var(--service-title-m);
+            font-weight: var(--font-semi-bold);
+            line-height: var(--font-height-service-t);
+        }
     }
 }
