@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
+  --gray-background: #FBFBFB;
+  --h4-color: #B1B1B1;
+  --p-color: #858585;
   --button-background: #202020;
   --button-colors: white;
   --button-border: 5px;
@@ -9,11 +12,12 @@
   --font-medium: 500;
   --font-regular: 400;
   --font-uppercase: uppercase;
-  --font-space: 261px;
+  --font-space: 6px;
   --font-height-p: 25px;
   --font-height-service-p: 20px;
   --font-height-testimonals: 28px;
   --font-height-title: 65px;
+  --font-height-subtitle: 43px;
   --h1-size-m: 55px;
   --h2-size-m: 36px;
   --h3-size-m: 25px;
@@ -72,7 +76,7 @@ nav li a:hover {
 }
 
 .navbar {
-  padding: 1em 2em;
+  padding: 1.5em;
 }
 
 .navbar .logo {
@@ -136,7 +140,7 @@ nav li a:hover {
   background-color: var(--button-background);
   border-radius: var(--button-border);
   width: 200px;
-  padding: 1.2em 2em;
+  padding: 1.2em 1em;
   color: white;
   font-weight: var(--font-semi-bold);
   font-size: var(--p-size-m);
@@ -149,5 +153,35 @@ nav li a:hover {
   left: 10em;
   margin-top: -40em;
   width: 800px;
+}
+
+.desktop {
+  display: none;
+}
+
+.why-me {
+  margin-top: 8em;
+  padding: 8em 1.5em;
+  background-color: var(--gray-background);
+}
+
+.why-me h4 {
+  font-size: var(--h4-size-m);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--font-space);
+  text-transform: var(--font-uppercase);
+  color: var(--h4-color);
+}
+
+.why-me h2 {
+  font-size: var(--h2-size-m);
+  font-weight: var(--font-semi-bold);
+  line-height: var(--font-height-subtitle);
+  padding: 10px 2em .7em 0em;
+}
+
+.why-me p {
+  color: var(--p-color);
+  padding-bottom: 5em;
 }
 /*# sourceMappingURL=main.css.map */
