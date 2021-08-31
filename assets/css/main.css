@@ -18,7 +18,7 @@
   --font-space: 6px;
   --font-height-p: 25px;
   --font-height-service-p: 20px;
-  --font-height-service-t: 22px;
+  --font-height-service-t: 24px;
   --font-height-testimonals: 28px;
   --font-height-title: 65px;
   --font-height-subtitle: 43px;
@@ -219,6 +219,10 @@ nav li a:hover {
 }
 
 .why-me ul #fast-service-text {
+  margin-left: -.5em;
+}
+
+.why-me ul #deadline-icon {
   margin-left: -.5em;
 }
 

@@ -18,15 +18,18 @@
     //font
     --font-family: 'Poppins', serif;
 
+    //weight
     --font-bold: 700;
     --font-semi-bold: 600;
     --font-medium: 500;
     --font-regular: 400;
     --font-uppercase: uppercase;
     --font-space: 6px;
+
+    //height
     --font-height-p: 25px;
     --font-height-service-p: 20px;
-    --font-height-service-t: 22px;
+    --font-height-service-t: 24px;
     --font-height-testimonals: 28px;
     --font-height-title: 65px;
     --font-height-subtitle: 43px;
@@ -215,6 +218,10 @@ nav {
         } 
 
         #fast-service-text{
+            margin-left: -.5em;
+        }
+        
+        #deadline-icon {
             margin-left: -.5em;
         }
         
