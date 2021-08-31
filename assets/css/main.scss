@@ -112,11 +112,9 @@ nav {
 }
 
 .hero {
-    padding: 1em .5em;
+    padding: .5em;
     display: block;
     align-items: center;
-    justify-content: center;
-    place-content: center;
     position: relative;
 
     .hero-title {
@@ -124,7 +122,7 @@ nav {
         font-weight: var(--font-semi-bold);
         line-height: var(--font-height-title);
         text-align: center;
-        margin-top: 2em;
+        margin-top: 1.5em;
     }
 
     .hero-desc {
