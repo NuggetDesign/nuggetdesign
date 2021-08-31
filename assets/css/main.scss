@@ -52,7 +52,12 @@
     padding: 0;
 }
 
-.test {
+span:after {
+    content: ' ';
+    display: block;
+}
+
+html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -177,7 +182,7 @@ nav {
         font-size: var(--h2-size-m);
         font-weight: var(--font-semi-bold);
         line-height: var(--font-height-subtitle);
-        padding: 10px 2em .7em 0em;
+        padding: 10px 0em .7em 0em;
     }
 
     p {
