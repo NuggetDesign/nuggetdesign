@@ -289,6 +289,7 @@ nav {
     }
 }
 
+
 .projects {
     padding: 5em 1.5em;
 
@@ -324,6 +325,15 @@ nav {
             font-weight: var(--font-bold);
             padding: 1.5em 4em;
         }
+    }
+
+    .longline {
+        letter-spacing: -2px;
+    }
+
+    .shortline {
+        letter-spacing: 0px;
+        padding-left: 0.5em;
     }
 
     .featured-project {

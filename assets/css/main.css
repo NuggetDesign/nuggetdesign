@@ -327,6 +327,15 @@ nav li a:hover {
   padding: 1.5em 4em;
 }
 
+.projects .longline {
+  letter-spacing: -2px;
+}
+
+.projects .shortline {
+  letter-spacing: 0px;
+  padding-left: 0.5em;
+}
+
 .projects .featured-project .project-img {
   width: 100%;
   border-radius: var(--img-border);
