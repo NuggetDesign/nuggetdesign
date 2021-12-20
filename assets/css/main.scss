@@ -426,4 +426,54 @@ nav {
             padding-bottom: 5em;
         }
     }
+
+    .box-testimonials {
+        background-color: #FFF3F3;
+        border-radius: 1.5em;
+        padding: 2em;
+
+        .testimonial-character {
+            width: 12em;
+            display: block;
+            margin: -5em auto 1em auto
+        }
+
+        .testimonial-stars {
+            display: flex;
+            padding: 0 1em;
+            margin-bottom: 2em;
+
+            img {
+                width: 30px;
+            }
+
+            li {
+                display: block;
+                margin: 0 auto 0 auto;
+            }
+        }
+
+        .right-col {
+
+            h3 {
+                color: #803E3E;
+                font-weight: var(--font-semi-bold);
+                line-height: 25px;
+                margin-bottom: 2em;
+            }
+
+            .quotation-marks {
+                width: 35px;
+            }
+
+            h4 {
+                color: #803E3E;
+                font-weight: var(--font-semi-bold);
+            }
+
+            p {
+                color: #B28080;
+            }
+        }
+    }
 }

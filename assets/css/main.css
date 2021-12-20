@@ -431,4 +431,53 @@ nav li a:hover {
   color: var(--p-color);
   padding-bottom: 5em;
 }
+
+.testimonials .box-testimonials {
+  background-color: #FFF3F3;
+  border-radius: 1.5em;
+  padding: 2em;
+}
+
+.testimonials .box-testimonials .testimonial-character {
+  width: 12em;
+  display: block;
+  margin: -5em auto 1em auto;
+}
+
+.testimonials .box-testimonials .testimonial-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+.testimonials .box-testimonials .testimonial-stars img {
+  width: 30px;
+}
+
+.testimonials .box-testimonials .testimonial-stars li {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.testimonials .box-testimonials .right-col h3 {
+  color: #803E3E;
+  font-weight: var(--font-semi-bold);
+  line-height: 25px;
+  margin-bottom: 2em;
+}
+
+.testimonials .box-testimonials .right-col .quotation-marks {
+  width: 35px;
+}
+
+.testimonials .box-testimonials .right-col h4 {
+  color: #803E3E;
+  font-weight: var(--font-semi-bold);
+}
+
+.testimonials .box-testimonials .right-col p {
+  color: #B28080;
+}
 /*# sourceMappingURL=main.css.map */
