@@ -28,12 +28,12 @@
   --font-height-testimonals: 28px;
   --font-height-title: 65px;
   --font-height-subtitle: 43px;
-  --font-height-subtitle-line: 30px;
+  --font-height-subtitle-line: 45px;
   --font-height-fp: 30px;
   --h1-size: 55px;
-  --h2-size: 36px;
+  --h2-size: 32px;
   --h3-size: 25px;
-  --h4-size: 14px;
+  --h4-size: 12px;
   --p-size: 16px;
   --h2-padding: 10px 0 .7em;
   --service-title: 22px;
@@ -217,7 +217,7 @@ nav li a:hover {
           box-shadow: var(--card-background);
   border-radius: var(--card-border);
   height: 125px;
-  margin: 2em 2em;
+  margin: 2em 0em;
 }
 
 .why-me ul img {
@@ -308,7 +308,7 @@ nav li a:hover {
   font-size: var(--h2-size);
   font-weight: var(--font-semi-bold);
   line-height: var(--font-height-subtitle-line);
-  padding: var(--h2-padding);
+  padding: .3em 0em .2em;
 }
 
 .projects .title-header p {
@@ -388,7 +388,7 @@ nav li a:hover {
   font-size: var(--h2-size);
   font-weight: var(--font-semi-bold);
   line-height: var(--font-height-subtitle-line);
-  padding: var(--h2-padding);
+  padding: .3em 0em .2em;
 }
 
 .testimonials .title-header p {
@@ -443,5 +443,41 @@ nav li a:hover {
 
 .testimonials .box-testimonials .right-col p {
   color: #B28080;
+}
+
+.footer {
+  padding: 1.5em;
+  background-color: #FFF8F3;
+}
+
+.footer .title-header {
+  margin: 4em 0em 4em;
+}
+
+.footer .title-header h2 {
+  font-size: 28px;
+  font-family: var(--font-family);
+  font-weight: var(--font-semi-bold);
+  padding-bottom: .5em;
+}
+
+.footer .title-header p {
+  font-size: 15px;
+  padding-bottom: 1.5em;
+  color: #6E6E6E;
+}
+
+.footer .title-header a {
+  background-color: #202020;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: var(--font-semi-bold);
+  font-size: 12px;
+  display: block;
+  width: 200px;
+  padding: 2em;
+  text-align: center;
+  margin: 2em 0em;
+  border-radius: var(--button-border);
 }
 /*# sourceMappingURL=main.css.map */
