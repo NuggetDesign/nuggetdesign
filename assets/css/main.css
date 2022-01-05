@@ -8,7 +8,7 @@
   --card-background: 0px 0px 20px #E9E9E9;
   --card-border: 12px;
   --card-border-service: 20px;
-  --button-background: #202020;
+  --button-background: #000000;
   --button-color-w: white;
   --button-color-b: #202020;
   --button-border: 5px;
@@ -51,11 +51,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-span:after {
-  content: ' ';
-  display: block;
 }
 
 html, body {
@@ -153,10 +148,10 @@ nav li a:hover {
   background-color: var(--button-background);
   border-radius: var(--button-border);
   width: 200px;
-  padding: 1.2em 1em;
+  padding: 2em 1em;
   color: white;
   font-weight: var(--font-semi-bold);
-  font-size: var(--p-size);
+  font-size: 12px;
 }
 
 .hero #circle {
@@ -468,7 +463,7 @@ nav li a:hover {
 }
 
 .footer .title-header a {
-  background-color: #202020;
+  background-color: #000000;
   color: white;
   font-family: var(--font-family);
   font-weight: var(--font-semi-bold);
@@ -479,5 +474,108 @@ nav li a:hover {
   text-align: center;
   margin: 2em 0em;
   border-radius: var(--button-border);
+}
+
+.footer .information {
+  margin-left: -1.5em;
+  margin-bottom: -1.5em;
+  padding: 7em 1.5em 1em;
+  background-color: white;
+  border-radius: 0px 100px 0px 0px;
+  -webkit-box-shadow: 0 0 27px 5px #F2E8E0;
+          box-shadow: 0 0 27px 5px #F2E8E0;
+}
+
+.footer .information .left-col .desktop-copy {
+  display: none;
+}
+
+.footer .information .left-col .logo {
+  width: 90px;
+  padding-bottom: 1em;
+}
+
+.footer .information .left-col .long-logo {
+  width: 180px;
+}
+
+.footer .information .left-col p {
+  font-size: 14px;
+  color: #858585;
+  padding-bottom: 3.5em;
+}
+
+.footer .information .left-col .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #989898;
+  padding-bottom: 5em;
+}
+
+.footer .information .left-col .social-media img {
+  width: 25px;
+}
+
+.footer .information .left-col .social-media span {
+  padding-left: .7em;
+  font-weight: var(--font-medium);
+  font-size: 14px;
+}
+
+.footer .information .left-col .social-media .dribble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .information .left-col .social-media .behance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.5em;
+}
+
+.footer .information .right-col h1 {
+  font-weight: var(--font-semi-bold);
+  font-size: 45px;
+  line-height: 50px;
+  padding-bottom: .5em;
+}
+
+.footer .information .right-col p {
+  font-size: 14px;
+  color: #858585;
+  padding-bottom: 2em;
+}
+
+.footer .information .right-col a p {
+  background-color: #000000;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: var(--font-semi-bold);
+  font-size: 12px;
+  display: block;
+  width: 200px;
+  padding: 2em;
+  text-align: center;
+  margin-bottom: 7em;
+  border-radius: var(--button-border);
+}
+
+.footer .information .mobile-copy {
+  font-size: 9px;
+  color: #858585;
+}
+
+.footer .information .mobile-copy span {
+  color: #646464;
+  font-weight: var(--font-semi-bold);
 }
 /*# sourceMappingURL=main.css.map */
