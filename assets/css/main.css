@@ -327,85 +327,49 @@ nav li a:hover {
   padding: 1.5em 4em;
 }
 
-.projects .longline {
-  letter-spacing: -2px;
-}
-
-.projects .shortline {
-  letter-spacing: 0px;
-  padding-left: 0.5em;
-}
-
 .projects .featured-project .project-img {
   width: 100%;
   border-radius: var(--img-border);
 }
 
+.projects .featured-project .right-col .longline {
+  letter-spacing: -2px;
+  color: #858585;
+  font-weight: var(--font-semi-bold);
+  padding: 3em 0em .5em;
+}
+
+.projects .featured-project .right-col .shortline {
+  letter-spacing: 0px;
+  padding-left: 0.5em;
+}
+
 .projects .featured-project .right-col h3 {
   font-size: var(--h3-size);
   font-weight: var(--font-semi-bold);
-  line-height: var(--font-height-fp);
-  margin-top: 1em;
+  line-height: 34px;
+  margin-top: .2em;
+}
+
+.projects .featured-project .right-col .p-project {
+  padding: .5em 0em 2em;
+  color: #6E6E6E;
 }
 
 .projects .featured-project .right-col ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 160px auto;
-      grid-template-columns: 160px auto;
-  grid-gap: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 2em 0em 4em;
 }
 
 .projects .featured-project .right-col ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1em;
-  border: 1px solid #B8B8B8;
-  border-radius: 5px;
-}
-
-.projects .featured-project .right-col ul li p {
   font-size: var(--h4-size);
   font-weight: var(--font-semi-bold);
-  text-transform: var(--font-uppercase);
-  margin-left: 1em;
 }
 
-.projects .featured-project .right-col ul .longer {
-  padding: 1em 6em;
-}
-
-.projects .featured-project .right-col .view-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--button-background);
-  width: 230px;
-  color: white;
-  padding: 1.5em 2em;
-  border-radius: var(--button-border);
-  margin-bottom: 8em;
-}
-
-.projects .featured-project .right-col .view-more p {
-  font-size: var(--h4-size);
-  font-weight: var(--font-semi-bold);
-  letter-spacing: var(--button-space);
-  padding-right: 1em;
+.projects .featured-project .right-col ul .second-service {
+  padding-left: 2em;
 }
 
 .testimonials {

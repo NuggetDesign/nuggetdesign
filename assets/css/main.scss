@@ -327,15 +327,6 @@ nav {
         }
     }
 
-    .longline {
-        letter-spacing: -2px;
-    }
-
-    .shortline {
-        letter-spacing: 0px;
-        padding-left: 0.5em;
-    }
-
     .featured-project {
         .project-img {
             width: 100%;
@@ -344,57 +335,42 @@ nav {
 
         .right-col {
 
+            .longline {
+                letter-spacing: -2px;
+                color: #858585;
+                font-weight: var(--font-semi-bold);
+                padding: 3em 0em .5em;
+            }
+        
+            .shortline {
+                letter-spacing: 0px;
+                padding-left: 0.5em;
+            }
+
             h3 {
                 font-size: var(--h3-size);
                 font-weight: var(--font-semi-bold);
-                line-height: var(--font-height-fp);
-                margin-top: 1em;
+                line-height: 34px;
+                margin-top: .2em;
+            }
+
+            .p-project {
+                padding: .5em 0em 2em;
+                color: #6E6E6E;
             }
 
             ul {
-                display: grid;
-                grid-template-columns: 160px auto;
-                grid-gap: .5em;
+                display: flex;
                 margin: 2em 0em 4em;
 
                 li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 1em;
-                    border: 1px solid #B8B8B8;
-                    border-radius: 5px;
 
-                    p {
-                        font-size: var(--h4-size);
-                        font-weight: var(--font-semi-bold);
-                        text-transform: var(--font-uppercase);
-                        margin-left: 1em;
-                        
-                    }
-                }
-
-                .longer {
-                    padding: 1em 6em;
-                }
-            }
-
-            .view-more {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: var(--button-background);
-                width: 230px;
-                color: white;
-                padding: 1.5em 2em;
-                border-radius: var(--button-border);
-                margin-bottom: 8em;
-
-                p {
                     font-size: var(--h4-size);
-                    font-weight: var(--font-semi-bold);
-                    letter-spacing: var(--button-space);
-                    padding-right: 1em;
+                        font-weight: var(--font-semi-bold);
+                }
+
+                .second-service {
+                    padding-left: 2em;
                 }
             }
         }
