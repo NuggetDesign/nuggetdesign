@@ -587,4 +587,19 @@ nav li a:hover {
   color: #646464;
   font-weight: var(--font-semi-bold);
 }
+
+@media only screen and (min-width: 375px) {
+  .why-me ul li {
+    margin: 2em 1em;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .hero-title {
+    padding: 0em .5em;
+  }
+  .why-me ul li {
+    margin: 2em 3em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
