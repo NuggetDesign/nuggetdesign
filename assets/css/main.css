@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://use.typekit.net/lqy4xcj.css");
 :root {
   --gray-background: #FBFBFB;
   --h4-color: #B1B1B1;
@@ -105,8 +106,11 @@ nav li a:hover {
   margin-right: 1em;
 }
 
-.navbar .logo .nugget-short {
-  width: 100px;
+.navbar .logo h1 {
+  font-family: nort, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -1.5px;
 }
 
 .hero {
@@ -495,8 +499,13 @@ nav li a:hover {
   padding-bottom: 1em;
 }
 
-.footer .information .left-col .long-logo {
-  width: 180px;
+.footer .information .left-col h1 {
+  font-family: nort, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: -1.5px;
+  padding-bottom: .3em;
 }
 
 .footer .information .left-col p {
