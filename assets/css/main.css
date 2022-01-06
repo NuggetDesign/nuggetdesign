@@ -608,4 +608,85 @@ nav li a:hover {
     padding-right: 3em;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 1.5em 1em;
+  }
+  .navbar .logo .nugget-logo {
+    width: 40px;
+    margin-right: .8em;
+  }
+  .navbar .logo h1 {
+    font-size: 27px;
+  }
+  .hero {
+    padding: 1.5em 1em;
+    position: unset;
+    margin: 0;
+  }
+  .hero .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 470px 200px;
+        grid-template-columns: 470px 200px;
+        grid-template-areas: "text img";
+    margin: 0;
+  }
+  .hero .container .left-col {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
+    margin-top: -1em;
+  }
+  .hero .container .left-col .hero-title, .hero .container .left-col .hero-desc {
+    text-align: left;
+    padding: 0;
+  }
+  .hero .container .left-col .hero-desc {
+    padding: 1em 5em 1em 0;
+  }
+  .hero .container .left-col .hero-button {
+    display: block;
+    padding: 0;
+  }
+  .hero .container .desktop {
+    display: block;
+    position: absolute;
+    top: -15em;
+    left: 15em;
+    z-index: 1;
+    width: 1000px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  .hero .container #circle {
+    top: 22em;
+    left: 33em;
+    width: 800px;
+  }
+  .why-me {
+    padding: 4em 1em 6em;
+  }
+  .why-me .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 450px 1fr;
+        grid-template-columns: 450px 1fr;
+  }
+  .why-me .container li {
+    height: 90px;
+    padding: 0 .8em;
+  }
+  .why-me .container li h1 {
+    font-size: 18px;
+  }
+  .why-me .container li img {
+    width: 70px;
+  }
+  .why-me .container li #fast-icon {
+    width: 80px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

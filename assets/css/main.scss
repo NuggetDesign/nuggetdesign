@@ -617,3 +617,108 @@ nav {
         padding-right: 3em;
     }
 }
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        padding: 1.5em 1em;
+
+        .logo {
+
+            .nugget-logo {
+                width: 40px;
+                margin-right: .8em;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+        
+    }
+
+    .hero {
+        padding: 1.5em 1em;
+        position: unset;
+        margin: 0;
+        
+        .container {
+            display: grid;
+            grid-template-columns: 470px 200px;
+            grid-template-areas:
+                "text img";
+            margin: 0;
+
+            .left-col {
+                grid-area: text;
+                margin-top: -1em;
+
+                .hero-title, .hero-desc {
+                    text-align: left;
+                    padding: 0;
+                }
+
+                .hero-desc {
+                    padding: 1em 5em 1em 0;
+                }
+
+                .hero-button {
+                    display: block;
+                    padding: 0;
+                }
+            }
+
+            .desktop {
+                display: block;
+                position: absolute;
+                top: -15em;
+                left: 15em;
+                z-index: 1;
+                width: 1000px;
+                grid-area: img;
+            }
+
+            #circle {
+                top: 22em;
+                left: 33em;
+                width: 800px;
+            }
+        }
+    }
+
+    .why-me {
+        padding: 4em 1em 6em;
+
+        .container {
+            display: grid;
+            grid-template-columns: 450px 1fr;
+
+            li {
+                height: 90px;
+                padding: 0 .8em;
+
+                h1 {
+                    font-size: 18px;
+                }
+
+                img {
+                    width: 70px;
+                }
+
+                #fast-icon {
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
