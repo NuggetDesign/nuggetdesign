@@ -592,6 +592,9 @@ nav li a:hover {
   .why-me ul li {
     margin: 2em 1em;
   }
+  .footer p {
+    padding-right: 3em;
+  }
 }
 
 @media only screen and (min-width: 425px) {
@@ -600,6 +603,9 @@ nav li a:hover {
   }
   .why-me ul li {
     margin: 2em 3em;
+  }
+  .footer p {
+    padding-right: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */
