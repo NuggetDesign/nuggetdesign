@@ -69,23 +69,13 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-body {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-}
-
-body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
 }
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: hidden;
 }
 
 nav {
@@ -654,6 +644,7 @@ nav {
         position: unset;
         margin: 0;
         overflow-x: hidden;
+        overflow: hidden;
         
         .container {
             display: grid;
@@ -697,6 +688,10 @@ nav {
                 width: 800px;
             }
         }
+    }
+
+    .hero::-webkit-scrollbar {
+        display: none;
     }
 
     .why-me {
