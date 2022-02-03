@@ -72,14 +72,8 @@
 }
 
 html, body {
-    max-width: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
-    overflow: hidden;
-}
-
-::-webkit-scrollbar:horizontal {
-    display: none;
+    max-width: 100%;
 }
 
 nav {
@@ -628,15 +622,10 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
-    ::-webkit-scrollbar:horizontal {
-        display: none;
-    }
 
     html, body {
-        max-width: 100%;
         overflow-x: hidden;
-        overflow-y: scroll;
-        overflow: hidden;
+        max-width: 100%;
     }
 
     .navbar {
@@ -660,9 +649,6 @@ nav {
         padding: 1.5em 1em;
         position: unset;
         margin: 0;
-        overflow-x: hidden;
-        overflow: hidden;
-        width: 100vw;
         
         .container {
             display: grid;
@@ -698,16 +684,12 @@ nav {
                 z-index: 1;
                 width: 1000px;
                 grid-area: img;
-                overflow-x: auto; /* Must be 'scroll' not 'auto' */
-                -webkit-overflow-scrolling: touch;
             }
 
             #circle {
                 top: 22em;
                 left: 33em;
                 width: 800px;
-                overflow-x: auto; /* Must be 'scroll' not 'auto' */
-                -webkit-overflow-scrolling: touch;
             }
         }
     }
