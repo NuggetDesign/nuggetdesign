@@ -69,7 +69,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 element {
@@ -652,6 +651,7 @@ nav {
         padding: 1.5em 1em;
         position: unset;
         margin: 0;
+        overflow-x: hidden;
         
         .container {
             display: grid;
