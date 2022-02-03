@@ -621,6 +621,16 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+    ::-webkit-scrollbar:horizontal {
+        display: none;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        overflow: hidden;
+    }
 
     .navbar {
         padding: 1.5em 1em;
