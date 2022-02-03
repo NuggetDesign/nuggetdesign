@@ -78,6 +78,10 @@ html, body {
     overflow: hidden;
 }
 
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
 nav {
     position: fixed;
     z-index: 100;
@@ -135,6 +139,9 @@ nav {
     display: block;
     align-items: center;
     position: relative;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    overflow-x: auto;
 
     .hero-title {
         font-size: var(--h1-size);
