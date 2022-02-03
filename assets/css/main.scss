@@ -698,12 +698,16 @@ nav {
                 z-index: 1;
                 width: 1000px;
                 grid-area: img;
+                overflow-x: auto; /* Must be 'scroll' not 'auto' */
+                -webkit-overflow-scrolling: touch;
             }
 
             #circle {
                 top: 22em;
                 left: 33em;
                 width: 800px;
+                overflow-x: auto; /* Must be 'scroll' not 'auto' */
+                -webkit-overflow-scrolling: touch;
             }
         }
     }
