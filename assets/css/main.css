@@ -54,22 +54,9 @@
   padding: 0;
 }
 
-element {
-  -ms-overflow-style: none;
-  /* for Internet Explorer, Edge */
-  scrollbar-width: none;
-  /* for Firefox */
-  overflow-y: scroll;
-}
-
-element::-webkit-scrollbar {
-  display: none;
-  /* for Chrome, Safari, and Opera */
-}
-
 html, body {
+  overflow-x: hidden !important;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 nav {
@@ -133,6 +120,9 @@ nav li a:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .hero .hero-title {
@@ -679,6 +669,9 @@ nav li a:hover {
     left: 33em;
     width: 800px;
   }
+  .hero::-webkit-scrollbar {
+    display: none;
+  }
   .why-me {
     padding: 4em 1em 6em;
   }
@@ -700,6 +693,42 @@ nav li a:hover {
   }
   .why-me .container li #fast-icon {
     width: 80px;
+  }
+  .services ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .services ul li {
+    margin-top: 0em;
+  }
+  .projects .title-header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 72% 28%;
+        grid-template-columns: 72% 28%;
+    margin-bottom: 0em;
+  }
+  .projects .title-header .left-col {
+    margin-right: 3em;
+  }
+  .projects .title-header .view-button {
+    margin-top: 1em;
+    margin-right: 0em;
+  }
+  .projects .featured-project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    gap: 2em;
+  }
+  .projects .featured-project .project-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

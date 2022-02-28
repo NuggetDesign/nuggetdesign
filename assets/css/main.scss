@@ -247,7 +247,7 @@ nav {
     }
 }
 
-.services {
+.services { 
     padding: 1.5em;
     margin-top: -14em;
 
@@ -718,9 +718,48 @@ nav {
             }
         }
     }
+    
+    .services {
 
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
 
+            li {
+                margin-top: 0em;
+            }
+        }
+    }
 
+    .projects {
+
+        .title-header {
+            display: grid;
+            grid-template-columns: 72% 28%;
+            margin-bottom: 0em;
+
+            .left-col {
+                margin-right: 3em;
+                
+            }
+
+            .view-button {
+                margin-top: 1em;
+                margin-right: 0em;
+            }
+        }
+
+        .featured-project {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 2em;
+
+            .project-img {
+                align-self: center;
+            }
+        }
+    }
 
 
 
