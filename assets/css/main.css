@@ -721,14 +721,26 @@ nav li a:hover {
   .projects .featured-project {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% 40%;
-        grid-template-columns: 60% 40%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     gap: 2em;
   }
   .projects .featured-project .project-img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .projects .featured-project .right-col {
+    margin-right: 2em;
+  }
+  .testimonials .first-testimonial {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  .testimonials .first-testimonial .right-col {
+    margin-left: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

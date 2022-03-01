@@ -752,16 +752,30 @@ nav {
 
         .featured-project {
             display: grid;
-            grid-template-columns: 60% 40%;
+            grid-template-columns: 50% 50%;
             gap: 2em;
 
             .project-img {
                 align-self: center;
             }
+
+            .right-col {
+                margin-right: 2em;
+            }
         }
     }
 
+    .testimonials {
 
+        .first-testimonial {
+            display: grid;
+            grid-template-columns: 40% 60%;
+
+            .right-col {
+                margin-left: 2em;
+            }
+        }
+    }
 
 
 
