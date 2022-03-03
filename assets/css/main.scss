@@ -773,12 +773,42 @@ nav {
 
             .right-col {
                 margin-left: 2em;
+                margin-top: 2em;
+            }
+
+            .author {
+                display: none;
+            }
+
+            .desktop-author {
+
+                h4 {
+                    color: #803E3E;
+                    font-weight: var(--font-semi-bold);
+                }
+    
+                p {
+                    color: #B28080;
+                    font-size: 13px;
+                }
             }
         }
     }
 
+    .footer {
+        
+        .title-header {
+            display: flex;
+            
+            a {
+                margin: auto;
+                width: 300px;
+            }
+        }
+    }
+}
 
+@media only screen and (min-width: 768px) {
 
-
-
+    
 }

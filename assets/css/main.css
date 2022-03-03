@@ -741,6 +741,27 @@ nav li a:hover {
   }
   .testimonials .first-testimonial .right-col {
     margin-left: 2em;
+    margin-top: 2em;
+  }
+  .testimonials .first-testimonial .author {
+    display: none;
+  }
+  .testimonials .first-testimonial .desktop-author h4 {
+    color: #803E3E;
+    font-weight: var(--font-semi-bold);
+  }
+  .testimonials .first-testimonial .desktop-author p {
+    color: #B28080;
+    font-size: 13px;
+  }
+  .footer .title-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .title-header a {
+    margin: auto;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */
